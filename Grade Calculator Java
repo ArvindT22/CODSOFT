@@ -1,0 +1,41 @@
+import java.util.*;
+public class gradeCalculator{
+    public static void main(String[] args){
+    int sub1,sub2,sub3,sub4,sub5,avg,total;
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter subject marks out of 100");
+        System.out.println("First subject : ");
+        sub1=sc.nextInt();
+        System.out.println("Second subject : ");
+        sub2=sc.nextInt();
+        System.out.println("Third subject : ");
+        sub3=sc.nextInt();
+        System.out.println("Fourth subject : ");
+        sub4=sc.nextInt();
+        System.out.println("Fifth subject : ");
+        sub5=sc.nextInt();
+        total=sub1+sub2+sub3+sub4+sub5;
+        avg=total/5;
+        System.out.println("Total is "+total);
+        System.out.println("Average is "+avg);
+        sc.close();
+        if (avg>90){
+            System.out.println("Grade is A+");
+        }
+        else if(avg>80 && avg<90){
+            System.out.println("Grade is A");
+        }
+        else if(avg>70 && avg<80){
+            System.out.println("Grade is B+");
+        }
+        else if(avg>60 && avg<70){
+            System.out.println("Grade is B");
+        }
+        else if(avg>50 && avg<60){
+            System.out.println("Grade is C");
+        }
+        else{
+            System.out.println("Grade F");
+        }
+    }
+}
